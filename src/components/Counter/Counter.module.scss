@@ -1,0 +1,18 @@
+@import 'src/styles/vars';
+
+.Counter {
+  @include text-accent;
+  flex-shrink: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: $color-bg-accent;
+  color: $color-text-on;
+  box-shadow: inset 0 0 0 1px $color-border-primary;
+  font-family: $font-family-roboto-condensed;
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+}

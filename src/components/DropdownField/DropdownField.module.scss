@@ -1,0 +1,28 @@
+@import 'src/styles/vars';
+
+.DropdownField {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 8px;
+  align-items: center;
+  padding: 16px;
+  background-color: $color-bg-neutral;
+  border-radius: 12px;
+  border: 1px solid $color-border-primary;
+  cursor: pointer;
+  transition: border-color $transition;
+  &:hover,
+  &:focus-visible,
+  &_open {
+    border-color: $color-border-primary-hover;
+  }
+  &__placeholder {
+    @include text-accent;
+    font-family: $font-family-roboto-condensed;
+    text-transform: uppercase;
+  }
+  &_active {
+    padding: 8px 8px 8px 16px;
+  }
+}

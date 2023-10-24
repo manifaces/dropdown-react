@@ -1,0 +1,11 @@
+@import 'src/styles/vars';
+
+.AppDropdown {
+  position: relative;
+  max-width: 380px;
+  width: 100%;
+  height: max-content;
+  background-color: $color-white-500;
+  padding: 16px;
+  border-radius: 12px;
+}

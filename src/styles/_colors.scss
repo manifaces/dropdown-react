@@ -1,0 +1,46 @@
+// Black
+$color-black-500: #07000F;
+$color-black-400: #07000FB2;
+$color-black-300: #07000F66;
+$color-black-200: #07000F1A;
+$color-black-100: #F2F3F4;
+
+// Accent
+$color-accent-600: #085EDB;
+$color-accent-500: #0067FE;
+$color-accent-400: #0067FEB2;
+$color-accent-300: #0067FE66;
+$color-accent-200: #0067FE1A;
+$color-accent-100: #0067FE0D;
+
+// White
+$color-white-500: #FFFFFF;
+$color-white-400: #FFFFFFB2;
+$color-white-300: #FFFFFF66;
+$color-white-200: #FFFFFF1A;
+$color-white-100: #FFFFFF0D;
+
+// Text
+$color-text-primary: $color-black-500;
+$color-text-secondary: $color-black-400;
+$color-text-tertiary: $color-black-300;
+$color-text-accent: $color-accent-500;
+$color-text-on: $color-white-500;
+
+// Icons
+$color-icon-primary: $color-black-500;
+$color-icon-secondary: $color-black-400;
+$color-icon-tertiary: $color-black-300;
+$color-icon-accent: $color-accent-500;
+$color-icon-on: $color-white-500;
+
+// Background
+$color-bg-primary: $color-white-500;
+$color-bg-neutral: $color-black-100;
+$color-bg-accent: $color-accent-500;
+$color-bg-accent-hover: $color-accent-600;
+
+// Border 
+$color-border-primary: $color-black-200;
+$color-border-primary-hover: $color-black-300;
+$color-border-strong: $color-black-500;

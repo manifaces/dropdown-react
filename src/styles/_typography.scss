@@ -1,0 +1,52 @@
+@import './fonts.scss';
+
+$font-family-roboto-condensed: 'Roboto Condensed';
+$font-family-arial: 'Arial';
+$font-family-default:
+  system-ui,
+  /* macOS 10.11-10.12 */ -apple-system,
+  /* Windows 6+ */ 'Segoe UI',
+  /* Android 4+ */ 'Roboto',
+  /* Ubuntu 10.10+ */ 'Ubuntu',
+  /* Gnome 3+ */ 'Cantarell',
+  /* KDE Plasma 5+ */ 'Noto Sans',
+  /* fallback */ sans-serif,
+  /* macOS emoji */ 'Apple Color Emoji',
+  /* Windows emoji */ 'Segoe UI Emoji',
+  /* Windows emoji */ 'Segoe UI Symbol',
+  /* Linux emoji */ 'Noto Color Emoji';
+
+// Font-size
+$font-size-l: 16px;
+$font-size-m: 14px;
+
+// Line-height
+$line-height-xl: 150%; 
+$line-height-l: 140%; 
+$line-height-m: 120%; 
+$line-height-s: 100%; 
+
+// Mixins
+@mixin text-accent {
+  font-weight: var(--font-body-accent-weight);
+  font-size: var(--font-body-accent-size);
+  line-height: var(--font-body-accent-height);
+}
+
+@mixin text-body {
+  font-weight: var(--font-body-weight);
+  font-size: var(--font-body-size);
+  line-height: var(--font-body-height);
+}
+
+@mixin text-label {
+  font-weight: var(--font-label-weight);
+  font-size: var(--font-label-size);
+  line-height: var(--font-label-height);
+}
+
+@mixin text-caption {
+  font-weight: var(--font-caption-weight);
+  font-size: var(--font-caption-size);
+  line-height: var(--font-caption-height);
+}

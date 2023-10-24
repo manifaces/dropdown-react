@@ -1,0 +1,17 @@
+:root {
+  --font-body-accent-size: #{$font-size-l};
+  --font-body-accent-height: #{$line-height-s};
+  --font-body-accent-weight: 500;
+
+  --font-body-size: #{$font-size-l};
+  --font-body-height: #{$line-height-xl};
+  --font-body-weight: 400;
+
+  --font-label-size: #{$font-size-m};
+  --font-label-height: #{$line-height-m};
+  --font-label-weight: 500;
+
+  --font-caption-size: #{$font-size-m};
+  --font-caption-height: #{$line-height-l};
+  --font-caption-weight: 400;
+}

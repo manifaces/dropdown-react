@@ -1,0 +1,49 @@
+@import 'src/styles/vars';
+
+.TabList {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0px 16px;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% + 4px);
+    height: 1px;
+    background-color: $color-border-primary;
+  }
+  &__item {
+    @include text-accent;
+    position: relative;
+    padding: 12px 0;
+    font-family: $font-family-roboto-condensed;
+    text-transform: uppercase;
+    color: $color-text-tertiary;
+    cursor: pointer;
+    transition: color $transition;
+    &:hover,
+    &:focus-visible {
+      color: $color-text-primary;
+    }
+    &_active {
+      color: $color-text-primary;
+      &:hover::after,
+      &:focus-visible::after {
+        height: 2px;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        height: 1px;
+        background-color: $color-border-strong;
+      }
+    }
+  }
+}

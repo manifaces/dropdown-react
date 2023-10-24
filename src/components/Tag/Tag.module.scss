@@ -1,0 +1,23 @@
+@import 'src/styles/vars';
+
+.Tag {
+  @include text-label;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 12px;
+  color: $color-text-primary;
+  text-transform: uppercase;
+  background-color: $color-bg-neutral;
+  border-radius: 8px;
+  border: 1px solid $color-border-primary;
+  cursor: grab;
+  &__close {
+    flex-shrink: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}

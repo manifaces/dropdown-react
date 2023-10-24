@@ -1,0 +1,18 @@
+@import 'src/styles/vars';
+
+.DropdownItem {
+  position: relative;
+  @include text-body;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px 8px 16px;
+  color: $color-text-primary;
+  cursor: pointer;
+  transition: background-color $transition;
+  &:hover,
+  &:focus-visible {
+    background-color: $color-bg-neutral;
+  }
+}
