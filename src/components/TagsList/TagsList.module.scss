@@ -1,0 +1,28 @@
+@import 'src/styles/vars';
+
+.TagsList {
+  position: relative;
+  padding: 12px 0 12px 0;
+  font-family: $font-family-roboto-condensed;
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    height: 1px;
+    background-color: $color-border-primary;
+  }
+  :global {
+    .swiper-slide {
+      width: fit-content;
+      &:last-child {
+        margin-right: 16px!important;
+      }
+      &:first-child {
+        margin-left: 16px!important;
+      }
+    }
+  }
+}

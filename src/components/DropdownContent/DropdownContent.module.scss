@@ -1,0 +1,45 @@
+@import 'src/styles/vars';
+
+.DropdownContent {
+  position: relative;
+  border-radius: 12px;
+  border-top: none;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.02), 0px 4px 32px 0px rgba(0, 0, 0, 0.02);
+  max-height: 0;
+  overflow: hidden;
+  border: none;
+  transition: max-height .2s;
+  &_show {
+    border: 1px solid $color-border-primary;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 80px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%);
+    pointer-events: none;
+  }
+
+  &__scrollbar {
+    right: 6px!important;
+    width: 5px!important;
+    background: inherit!important;
+    z-index: 1;
+  }
+
+  &__thumb {
+    display: block;
+    background-color: $color-icon-primary!important;
+  }
+
+  :global {
+    .ScrollbarsCustom {
+      max-width: 320px;
+      width: 100%!important;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import 'src/styles/vars';
+
+.DropdownHeadline {
+  display: grid;
+  gap: 4px;
+  &__caption {
+    @include text-caption;
+    color: $color-text-primary;
+  }
+}

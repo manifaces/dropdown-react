@@ -1,0 +1,36 @@
+@import 'src/styles/vars';
+
+.Checkbox {
+  flex-shrink: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px $color-border-primary;
+  transition: background-color $transition;
+  cursor: pointer;
+  &_disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+  &__close {
+    position: relative;
+  }
+}
+
+.Checkbox_active {
+  background-color: $color-bg-accent;
+  &_disabled {
+    cursor: default;
+    pointer-events: none;
+    opacity: .5;
+  }
+  &:not(.Checkbox_disabled) {
+    &:hover,
+    &:focus-visible {
+      background-color: $color-bg-accent-hover;
+    }
+  }
+}

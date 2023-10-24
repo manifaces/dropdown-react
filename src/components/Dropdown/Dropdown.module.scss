@@ -1,0 +1,8 @@
+@import 'src/styles/vars';
+
+.Dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 320px;
+}
